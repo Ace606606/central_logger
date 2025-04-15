@@ -1,0 +1,30 @@
+{
+    "loggers": [
+        {
+            "name": "default",
+            "level": "debug",
+            "pattern": "[%Y-%m-%d %H:%M:%S.%e] [%^%l%$] [%n] %v",
+            "sinks": [
+                {
+                    "type": "stdout",
+                    "color": true
+                },
+                {
+                    "type": "file",
+                    "filename": "logs/app.log"
+                }
+            ]
+        },
+        {
+            "name": "network",
+            "level": "info",
+            "pattern": "[%H:%M:%S] [NET] %v",
+            "sinks": [
+                {
+                    "type": "stdout",
+                    "color": false
+                }
+            ]
+        }
+    ]
+}
